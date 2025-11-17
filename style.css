@@ -48,3 +48,18 @@ button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
 }
+.create-ad-container {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.create-ad-btn {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 8px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.create-ad-btn:hover {
+  background-color: #1769aa;
+}
