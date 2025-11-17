@@ -13,7 +13,13 @@ const userAds = ads.filter(a=>a.user===u.username);
 const container = document.getElementById('userAds'); container.innerHTML=''; userAds.forEach(a=>{ container.innerHTML += `<div class='ad-box'><h3>${a.title}</h3><p>${a.desc}</p><button onclick='deleteOwnAd(${ads.indexOf(a)})'>Delete</button></div>`; });
 const lb = document.getElementById('logoutBtn'); if(lb) lb.addEventListener('click', ()=>{ clearUser(); location.href='login.html'; });
 }
-
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    // Add your logic here (e.g., send data to server, validate)
+    alert(`Username: ${username}\nPassword: ${password}`);
+});
 
 function deleteOwnAd(i){ if(!confirm('Delete this ad?')) return; ads.splice(i,1); localStorage.setItem('ads', JSON.stringify(ads)); location.reload(); }
 
@@ -47,4 +53,5 @@ const lb2 = document.getElementById('logoutBtn2'); if(lb2) lb2.addEventListener(
 
 
 // Init: if logged in, ensure user object pulled from storage is up-to-date
+
 (function(){ const raw = localStorage.getItem('user'); if(raw) user = JSON.parse(raw); if(!users.length) { const stored = localStorage.getItem('users'); if(stored) users = JSON.parse(stored); } updateAuthLink(); })();
