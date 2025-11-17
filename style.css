@@ -14,4 +14,37 @@ button{padding:10px;border-radius:8px;border:0;background:linear-gradient(90deg,
 .page{padding:20px}
 .muted{color:var(--muted)}
 .dark{--bg:#071428;--card:#0b1220;--text:#e6eef6;--muted:#9aa7b2}
+
 .logout-btn{background:transparent;border:1px solid #ccc;padding:6px 10px;border-radius:6px}
+.login-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
