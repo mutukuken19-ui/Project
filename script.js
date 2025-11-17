@@ -55,3 +55,5 @@ const lb2 = document.getElementById('logoutBtn2'); if(lb2) lb2.addEventListener(
 // Init: if logged in, ensure user object pulled from storage is up-to-date
 
 (function(){ const raw = localStorage.getItem('user'); if(raw) user = JSON.parse(raw); if(!users.length) { const stored = localStorage.getItem('users'); if(stored) users = JSON.parse(stored); } updateAuthLink(); })();
+
+document.body.classList.toggle('dark');
