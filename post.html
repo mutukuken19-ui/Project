@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Post Ad</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<div class="brand">AdSite</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="post.html">Post Ad</a>
+<a href="profile.html">Profile</a>
+</nav>
+</header>
+
+
+<main>
+<section class="page">
+<h2>Create a new Ad</h2>
+<form id="postForm" class="form-box">
+<input id="title" type="text" placeholder="Ad Title" required />
+<select id="category"><option>Electronics</option><option>Vehicles</option><option>Real Estate</option><option>Services</option></select>
+<input id="price" type="text" placeholder="Price (e.g. KSH 10,000)" />
+<textarea id="desc" placeholder="Description" required></textarea>
+<input id="imageFile" type="file" accept="image/*" />
+<p class="muted">Tip: you can paste an image URL or upload a file.</p>
+<input id="imageUrl" type="url" placeholder="Or paste image URL" />
+<button type="submit">Submit Ad</button>
+</form>
+</section>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>

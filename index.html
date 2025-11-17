@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AdSite — Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<div class="brand">AdSite</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="post.html">Post Ad</a>
+<a href="profile.html">Profile</a>
+<a href="admin.html">Admin</a>
+<a href="analytics.html">Analytics</a>
+<a id="authLink" href="login.html">Login</a>
+</nav>
+<div class="controls">
+<select id="categoryFilter"><option value="all">All categories</option><option>Electronics</option><option>Vehicles</option><option>Real Estate</option><option>Services</option></select>
+<input id="searchInput" placeholder="Search ads..." />
+<button id="searchBtn">Search</button>
+<button id="darkToggle">Dark</button>
+</div>
+</header>
+
+
+<main>
+<section class="overview">
+<h2>Latest Ads</h2>
+<div id="ads-list" class="ads"></div>
+</section>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
